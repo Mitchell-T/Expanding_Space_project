@@ -15,7 +15,7 @@ public class SineWave_Movement : MonoBehaviour
     void Start()
     {
         pos = transform.position;
-        DestroyObject(gameObject, 10.0f);
+        Destroy(gameObject, 10.0f);
         axis = transform.up;  // May or may not be the axis you want
 
     }
