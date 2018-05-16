@@ -28,30 +28,30 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
         // DIRECT MOVEMENT
         //if (Input.GetKey(KeyCode.D))
         //{
         //    Debug.Log("forward");
-        //    transform.Translate(Vector3.right * Time.deltaTime * speedForward);
+        //    transform.Translate(Vector3.right * Time.deltaTime * thrust);
         //}
 
         //if (Input.GetKey(KeyCode.A))
         //{
         //    Debug.Log("backwards");
-        //    transform.Translate(Vector3.left * Time.deltaTime * speedBackward);
+        //    transform.Translate(Vector3.left * Time.deltaTime * reverseThrust);
         //}
 
         //if (Input.GetKey(KeyCode.W))
         //{
         //    Debug.Log("forward");
-        //    transform.Translate(Vector3.up * Time.deltaTime * dodgeSpeed);
+        //    transform.Translate(Vector3.up * Time.deltaTime * dodgeThrust);
         //}
 
         //if (Input.GetKey(KeyCode.S))
         //{
         //    Debug.Log("backwards");
-        //    transform.Translate(Vector3.down * Time.deltaTime * dodgeSpeed);
+        //    transform.Translate(Vector3.down * Time.deltaTime * dodgeThrust);
         //}
 
 
@@ -80,6 +80,6 @@ public class PlayerMovement : MonoBehaviour {
             rb.AddForce(transform.right * thrust);
         }
 
-            rb.velocity = rb.velocity * 0.9f;
+        rb.velocity = rb.velocity * 0.9f;
     }
 }
