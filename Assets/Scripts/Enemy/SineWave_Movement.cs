@@ -9,6 +9,7 @@ public class SineWave_Movement : MonoBehaviour
     public float frequency = 20.0f;  // Speed of sine movement
     public float magnitude = 0.5f;   // Size of sine movement
     private Vector3 axis;
+    public bool reverseWave;
 
     private Vector3 pos;
 
@@ -22,7 +23,16 @@ public class SineWave_Movement : MonoBehaviour
 
     void Update()
     {
-        pos += -transform.right * Time.deltaTime * MoveSpeed;
-        transform.position = pos + axis * Mathf.Sin(Time.time * frequency) * magnitude;
+        if (!reverseWave)
+        {
+            pos += -transform.right * Time.deltaTime * MoveSpeed;
+            transform.position = pos + axis * Mathf.Sin(Time.time * frequency) * magnitude;
+        } else if (reverseWave)
+        {
+            pos += -transform.right * Time.deltaTime * MoveSpeed;
+            transform.position = pos + axis * Mathf.Sin(Time.time * -frequency) * magnitude;
+        }
+
+        
     }
 }
