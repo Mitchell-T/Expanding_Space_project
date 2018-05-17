@@ -23,13 +23,42 @@ GameObject:
   - component: {fileID: 114655933113463410}
   - component: {fileID: 114707022343288840}
   - component: {fileID: 65582803369151774}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SmallEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1527763869588944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4376097961628830}
+  - component: {fileID: 114320195226446040}
+  m_Layer: 10
+  m_Name: RotatingGun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4376097961628830
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1527763869588944}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4835934438416850}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4835934438416850
 Transform:
   m_ObjectHideFlags: 1
@@ -37,9 +66,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1499572375953024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.96, y: 3.6499999, z: 0}
+  m_LocalPosition: {x: 9.12, y: 3.6499999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4376097961628830}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -55,6 +85,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.84, y: 0.9, z: 4.526842}
   m_Center: {x: 0, y: 0, z: 0.01922667}
+--- !u!114 &114320195226446040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1527763869588944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4fcfc44fa8f1fb44987ec8f57d56164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fire: 1
+  bulletSpeed: 1
+  bullet: {fileID: 54755890284625206, guid: 84570d78b9669b54ca2e6dd010f832cc, type: 2}
 --- !u!114 &114655933113463410
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -66,8 +110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d3548b6dd3be914582a60258f4ac0e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 5
-  frequency: 5
+  MoveSpeed: 2
+  frequency: 3
   magnitude: 1
   reverseWave: 0
 --- !u!114 &114707022343288840
@@ -81,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956bc6293f4c84646ac4093396639438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 0
+  lives: 3
 --- !u!212 &212847155412240224
 SpriteRenderer:
   m_ObjectHideFlags: 1
