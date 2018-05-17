@@ -549,7 +549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 40
   dodgeThrust: 30
-  reverseThrust: 20
+  reverseThrust: 30
   rb: {fileID: 1488543206}
 --- !u!114 &1488543208
 MonoBehaviour:
