@@ -152,16 +152,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114655933113463410, guid: e11acde74da230b4d82f2a3a5bf48407,
-        type: 2}
-      propertyPath: frequency
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114655933113463410, guid: e11acde74da230b4d82f2a3a5bf48407,
-        type: 2}
-      propertyPath: magnitude
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e11acde74da230b4d82f2a3a5bf48407, type: 2}
   m_IsPrefabParent: 0
@@ -175,6 +165,7 @@ GameObject:
   - component: {fileID: 179585486}
   - component: {fileID: 179585485}
   - component: {fileID: 179585487}
+  - component: {fileID: 179585488}
   m_Layer: 0
   m_Name: SpaceBackground
   m_TagString: Untagged
@@ -252,6 +243,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
+--- !u!95 &179585488
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 179585484}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6dbb21cff95923a4994d6b96ac01b68b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &363955317
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,6 +326,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &685357287 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1161669703629896, guid: c514aa5b10526b041af119270222c244,
+    type: 2}
+  m_PrefabInternal: {fileID: 724940698}
+--- !u!95 &685357288
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685357287}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 868ac659183a4db46b908751b4e54daf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &724940698
 Prefab:
   m_ObjectHideFlags: 0
@@ -501,17 +533,21 @@ Prefab:
     - target: {fileID: 114655933113463410, guid: e11acde74da230b4d82f2a3a5bf48407,
         type: 2}
       propertyPath: frequency
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114655933113463410, guid: e11acde74da230b4d82f2a3a5bf48407,
         type: 2}
       propertyPath: magnitude
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114320195226446040, guid: e11acde74da230b4d82f2a3a5bf48407,
         type: 2}
       propertyPath: reverse
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499572375953024, guid: e11acde74da230b4d82f2a3a5bf48407, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e11acde74da230b4d82f2a3a5bf48407, type: 2}
