@@ -24,7 +24,7 @@ public class Attacks : MonoBehaviour {
     // fire the bullet
     void Fire()
     {
-        Vector3 bulletpos = (transform.position + new Vector3(0, 0, 0.2f));
+        Vector3 bulletpos = (transform.position + new Vector3(0, -0.35f, 0.2f));
 
         Rigidbody bulletClone = (Rigidbody)Instantiate(bullet, bulletpos, transform.rotation);
         bulletClone.velocity = transform.right * bulletSpeed;
