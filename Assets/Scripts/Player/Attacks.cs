@@ -9,7 +9,12 @@ public class Attacks : MonoBehaviour {
     [SerializeField]
     private Rigidbody bullet;
 
-    
+    [SerializeField]
+    private float lazerSpeed = 10f;
+    [SerializeField]
+    private Rigidbody lazer;
+
+
 
     // Update is called once per frame
     void Update () {
@@ -18,7 +23,11 @@ public class Attacks : MonoBehaviour {
             Fire();
         }
 
-	}
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            FireLazer();
+        }
+    }
 
 
     // fire the bullet
@@ -29,6 +38,17 @@ public class Attacks : MonoBehaviour {
         Rigidbody bulletClone = (Rigidbody)Instantiate(bullet, bulletpos, transform.rotation);
         bulletClone.velocity = transform.right * bulletSpeed;
         Physics.IgnoreCollision(bulletClone.GetComponent<Collider>(), GetComponent<Collider>(), true);
+        //GetComponent<AudioSource>().Play();
+    }
+
+    // fire the lazer
+    void FireLazer()
+    {
+        Vector3 lazerpos = (transform.position + new Vector3(0, -0.35f, 0.2f));
+
+        Rigidbody lazerClone = (Rigidbody)Instantiate(lazer, lazerpos, transform.rotation);
+        //lazerClone.velocity = transform.right * lazerSpeed;
+        Physics.IgnoreCollision(lazerClone.GetComponent<Collider>(), GetComponent<Collider>(), true);
         //GetComponent<AudioSource>().Play();
     }
 }

@@ -14,6 +14,7 @@ public class AnimationController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+        //Default Fireing
         if (Input.GetKeyDown(KeyCode.Space))
         {
             animator.ResetTrigger("isFiring");
@@ -21,11 +22,15 @@ public class AnimationController : MonoBehaviour {
 
         }
 
+        //Lazer
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            animator.ResetTrigger("isFiringLaser");
+            animator.SetTrigger("isFiringLaser");
 
+        }
 
-        
-
-	}
+    }
 
     private void OnCollisionEnter(Collision col)
     {
