@@ -9,23 +9,48 @@ public class EnemySpawner : MonoBehaviour {
     [SerializeField]
     private Rigidbody mediumEnemy;
     [SerializeField]
-    private Rigidbody LargeEnemy;
+    private Rigidbody largeEnemy;
     [SerializeField]
-    private Rigidbody BOSS;
+    private Rigidbody Boss;
     [SerializeField]
     private Rigidbody asteroid;
 
+    private void Start()
+    {
+        SpawnSmallEnemies();
+    }
 
 
+    public void SpawnSmallEnemies()
+    {
+        Spawn(smallEnemy, 10, 6.2f, -4.2f);
+    }
 
+    public void SpawnMediumEnemies()
+    {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    }
+
+    public void SpawnLargeEnemies()
+    {
+
+    }
+
+    public void SpawnBoss()
+    {
+
+    }
+
+    public void SpawnAsteroid()
+    {
+        
+    }
+
+    private void Spawn(Rigidbody enemyToSpawn, int numberToSpawn, float maxTopCoord, float maxBottomCoord)
+    {
+        for (int i = 0; i < numberToSpawn; i++)
+        {
+            Instantiate(enemyToSpawn, new Vector3(11, Random.Range(maxBottomCoord, maxTopCoord), 0), Quaternion.identity);
+        }
+    }
 }
