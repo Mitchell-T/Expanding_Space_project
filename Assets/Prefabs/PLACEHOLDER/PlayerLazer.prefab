@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4309593975219562}
   - component: {fileID: 212241695447682578}
   - component: {fileID: 114089786362874236}
+  - component: {fileID: 114493496928593832}
   - component: {fileID: 65955246604825194}
   - component: {fileID: 54711859768209112}
   m_Layer: 9
@@ -76,12 +77,27 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1519164143832950}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7927f5855be63d44c8f0424cd6a37102, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timeBeforeDelete: 5
+--- !u!114 &114493496928593832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1519164143832950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 663a42874fbebba46ad3ed78b5804a0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lazerWidthSpeed: 10
+  lazerWidth: 10
+  objectA: {fileID: 4309593975219562}
+  objectB: {fileID: 4563096724740926, guid: 87906a2c34f2826448b6a213a0a69281, type: 2}
 --- !u!212 &212241695447682578
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -117,7 +133,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 74433d2b4541b2c4091779f5cb90109a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 09f5e22f3f700cd46bbd6b2c12bf674c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -115,6 +115,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 10
   bullet: {fileID: 54711859768209112, guid: d2154d5f826f39744b79f183f510b197, type: 2}
+  lazerSpeed: 10
+  lazer: {fileID: 54711859768209112, guid: 1ccccddd21b3bd34191de891df9f1bed, type: 2}
 --- !u!114 &114537452800178536
 MonoBehaviour:
   m_ObjectHideFlags: 1

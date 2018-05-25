@@ -27,7 +27,7 @@ public class AnimationController : MonoBehaviour {
         {
             animator.ResetTrigger("isFiringLaser");
             animator.SetTrigger("isFiringLaser");
-
+        
         }
 
     }

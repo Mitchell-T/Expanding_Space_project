@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class scr_Life_Counter : MonoBehaviour
+public class Life_Counter : MonoBehaviour
 {
+
     public Text uiText;
     public Text ScoreText;
     public int Lives = 3;
@@ -18,9 +19,9 @@ public class scr_Life_Counter : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         print("hit");
-        if (other.gameObject.tag == "Cube")
+        if (other.gameObject.tag=="Cube")
         {
-            Destroy(other.gameObject);
+            TakeDamage();
         }
     }
 
@@ -30,7 +31,7 @@ public class scr_Life_Counter : MonoBehaviour
 
         UpdateUI();
 
-        if (Lives <= 0)
+        if (Lives<=0)
         {
             GameObject screen_main = GameObject.FindGameObjectWithTag("Tag_Screen_Main");
             screen_main.GetComponent<Canvas>().enabled = false;
