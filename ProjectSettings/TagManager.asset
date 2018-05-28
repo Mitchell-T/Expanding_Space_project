@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bullet
+  - Tag_Screen_Main
+  - Tag_Boss
   layers:
   - Default
   - TransparentFX
