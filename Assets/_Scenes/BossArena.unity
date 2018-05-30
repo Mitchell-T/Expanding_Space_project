@@ -215,16 +215,16 @@ HingeJoint:
   m_ConnectedBody: {fileID: 2008307612}
   m_Anchor: {x: -0.33, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
-  m_AutoConfigureConnectedAnchor: 0
-  m_ConnectedAnchor: {x: 0.2909999, y: 0.06546097, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0.20579742, y: -0.061096895, z: 0}
   m_UseSpring: 1
   m_Spring:
-    spring: 50
-    damper: 50
-    targetPosition: 50
-  m_UseMotor: 0
+    spring: 32.43
+    damper: 6.96
+    targetPosition: 0
+  m_UseMotor: 1
   m_Motor:
-    targetVelocity: 0
+    targetVelocity: 2.33
     force: 0
     freeSpin: 0
   m_UseLimits: 1
@@ -238,8 +238,8 @@ HingeJoint:
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
-  m_MassScale: 47.4
-  m_ConnectedMassScale: 47.4
+  m_MassScale: 24
+  m_ConnectedMassScale: 24
 --- !u!54 &114023910
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -249,7 +249,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 50
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 30
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -301,7 +301,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 18
   m_Sprite: {fileID: 21300000, guid: 1f3159e2a694acd4889198a42a3f0eeb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -411,7 +411,7 @@ GameObject:
   - component: {fileID: 281299186}
   - component: {fileID: 281299187}
   m_Layer: 0
-  m_Name: joint6
+  m_Name: joint5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1344,7 +1344,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &967507327
 Transform:
   m_ObjectHideFlags: 0
@@ -1372,12 +1372,12 @@ HingeJoint:
   m_ConnectedAnchor: {x: 0.2089613, y: 0, z: 0}
   m_UseSpring: 1
   m_Spring:
-    spring: 50
-    damper: 50
-    targetPosition: 50
-  m_UseMotor: 0
+    spring: 32.43
+    damper: 6.96
+    targetPosition: 0
+  m_UseMotor: 1
   m_Motor:
-    targetVelocity: 0
+    targetVelocity: 2.33
     force: 0
     freeSpin: 0
   m_UseLimits: 1
@@ -1391,8 +1391,8 @@ HingeJoint:
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
-  m_MassScale: 47.4
-  m_ConnectedMassScale: 47.4
+  m_MassScale: 24
+  m_ConnectedMassScale: 24
 --- !u!54 &967507329
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1402,7 +1402,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 50
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 30
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -1454,7 +1454,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300000, guid: 1f3159e2a694acd4889198a42a3f0eeb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1779,7 +1779,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!59 &1223943500
 HingeJoint:
   m_ObjectHideFlags: 0
@@ -1793,12 +1793,12 @@ HingeJoint:
   m_ConnectedAnchor: {x: 0.21769004, y: 0, z: 0}
   m_UseSpring: 1
   m_Spring:
-    spring: 50
-    damper: 50
-    targetPosition: 50
-  m_UseMotor: 0
+    spring: 32.43
+    damper: 6.96
+    targetPosition: 0
+  m_UseMotor: 1
   m_Motor:
-    targetVelocity: 0
+    targetVelocity: 2.33
     force: 0
     freeSpin: 0
   m_UseLimits: 1
@@ -1812,8 +1812,8 @@ HingeJoint:
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
-  m_MassScale: 47.4
-  m_ConnectedMassScale: 47.4
+  m_MassScale: 24
+  m_ConnectedMassScale: 24
 --- !u!54 &1223943501
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1823,7 +1823,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 50
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 30
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -1875,7 +1875,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 16
   m_Sprite: {fileID: 21300000, guid: 1f3159e2a694acd4889198a42a3f0eeb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1957,12 +1957,12 @@ GameObject:
   - component: {fileID: 1250852886}
   - component: {fileID: 1250852885}
   m_Layer: 0
-  m_Name: Body (5)
+  m_Name: Body (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1250852884
 Transform:
   m_ObjectHideFlags: 0
@@ -1975,7 +1975,7 @@ Transform:
   m_Children:
   - {fileID: 1705891403}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!59 &1250852885
 HingeJoint:
@@ -1983,19 +1983,19 @@ HingeJoint:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1250852883}
-  m_ConnectedBody: {fileID: 851344127}
+  m_ConnectedBody: {fileID: 281299187}
   m_Anchor: {x: -0.33, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.75228804, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.21769004, y: 0, z: 0}
   m_UseSpring: 1
   m_Spring:
-    spring: 50
-    damper: 50
-    targetPosition: 50
-  m_UseMotor: 0
+    spring: 32.43
+    damper: 6.96
+    targetPosition: 0
+  m_UseMotor: 1
   m_Motor:
-    targetVelocity: 0
+    targetVelocity: 2.33
     force: 0
     freeSpin: 0
   m_UseLimits: 1
@@ -2009,8 +2009,8 @@ HingeJoint:
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
-  m_MassScale: 47.4
-  m_ConnectedMassScale: 47.4
+  m_MassScale: 24
+  m_ConnectedMassScale: 24
 --- !u!54 &1250852886
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2020,7 +2020,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 50
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 30
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -2072,7 +2072,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: 1f3159e2a694acd4889198a42a3f0eeb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2114,7 +2114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodyParts:
   - {fileID: 0}
-  MoveSpeed: 0
+  MoveSpeed: 8.31
   frequency: 2
   magnitude: 2
   reverseWave: 0
@@ -2152,7 +2152,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 01973b12d344a0d4a808178fde02087c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2466,31 +2466,31 @@ GameObject:
   - component: {fileID: 1549046681}
   - component: {fileID: 1549046680}
   m_Layer: 0
-  m_Name: Body (6)
+  m_Name: Body (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!59 &1549046680
 HingeJoint:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1549046679}
-  m_ConnectedBody: {fileID: 1705891402}
+  m_ConnectedBody: {fileID: 851344127}
   m_Anchor: {x: -0.33, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.87769014, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.20459796, y: 0, z: 0}
   m_UseSpring: 1
   m_Spring:
-    spring: 50
-    damper: 50
-    targetPosition: 50
-  m_UseMotor: 0
+    spring: 32.43
+    damper: 6.96
+    targetPosition: 0
+  m_UseMotor: 1
   m_Motor:
-    targetVelocity: 0
+    targetVelocity: 2.33
     force: 0
     freeSpin: 0
   m_UseLimits: 1
@@ -2504,8 +2504,8 @@ HingeJoint:
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
-  m_MassScale: 47.4
-  m_ConnectedMassScale: 47.4
+  m_MassScale: 24
+  m_ConnectedMassScale: 24
 --- !u!54 &1549046681
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2515,7 +2515,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 50
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 30
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -2590,7 +2590,7 @@ Transform:
   m_Children:
   - {fileID: 281299186}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1705891401
 GameObject:
@@ -2602,7 +2602,7 @@ GameObject:
   - component: {fileID: 1705891403}
   - component: {fileID: 1705891402}
   m_Layer: 0
-  m_Name: joint5
+  m_Name: joint6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2918,7 +2918,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 19
   m_Sprite: {fileID: 21300000, guid: 1f3159e2a694acd4889198a42a3f0eeb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2942,12 +2942,12 @@ HingeJoint:
   m_ConnectedAnchor: {x: 0.29099995, y: 0.065460965, z: 0}
   m_UseSpring: 1
   m_Spring:
-    spring: 50
-    damper: 50
-    targetPosition: 50
-  m_UseMotor: 0
+    spring: 32.43
+    damper: 6.96
+    targetPosition: 0
+  m_UseMotor: 1
   m_Motor:
-    targetVelocity: 0
+    targetVelocity: 2.33
     force: 0
     freeSpin: 0
   m_UseLimits: 1
@@ -2961,8 +2961,8 @@ HingeJoint:
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
-  m_MassScale: 47.4
-  m_ConnectedMassScale: 47.4
+  m_MassScale: 24
+  m_ConnectedMassScale: 24
 --- !u!54 &1874816596
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2972,7 +2972,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 50
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 30
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -3065,16 +3065,16 @@ HingeJoint:
   m_ConnectedBody: {fileID: 2077933823}
   m_Anchor: {x: -0.33, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
-  m_AutoConfigureConnectedAnchor: 0
-  m_ConnectedAnchor: {x: 0.2909999, y: 0.06546097, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0.20459796, y: 0, z: 0}
   m_UseSpring: 1
   m_Spring:
-    spring: 50
-    damper: 50
-    targetPosition: 50
-  m_UseMotor: 0
+    spring: 32.43
+    damper: 6.96
+    targetPosition: 0
+  m_UseMotor: 1
   m_Motor:
-    targetVelocity: 0
+    targetVelocity: 2.33
     force: 0
     freeSpin: 0
   m_UseLimits: 1
@@ -3088,8 +3088,8 @@ HingeJoint:
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
-  m_MassScale: 47.4
-  m_ConnectedMassScale: 47.4
+  m_MassScale: 24
+  m_ConnectedMassScale: 24
 --- !u!54 &1912715603
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3099,7 +3099,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 50
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 30
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -3151,7 +3151,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 17
   m_Sprite: {fileID: 21300000, guid: 1f3159e2a694acd4889198a42a3f0eeb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
