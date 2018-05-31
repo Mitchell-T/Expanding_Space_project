@@ -15,13 +15,17 @@ public class RotatingShooting : MonoBehaviour {
     [SerializeField]
     private Rigidbody bullet;
 
+    [SerializeField]
+    private float xToFire;
+
     private Rigidbody bulletClone;
 
 
     // Update is called once per frame
     void Update () {
-		if (fire)
+        if (fire && transform.position.x <= xToFire)
         {
+
             StartCoroutine(FireOnce());
             fire = false;
         }

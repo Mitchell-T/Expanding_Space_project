@@ -81,7 +81,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7927f5855be63d44c8f0424cd6a37102, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeDelete: 5
+  timeBeforeDelete: 10
 --- !u!212 &212241695447682578
 SpriteRenderer:
   m_ObjectHideFlags: 1
