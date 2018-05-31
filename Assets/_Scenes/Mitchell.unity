@@ -391,16 +391,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114320195226446040, guid: e11acde74da230b4d82f2a3a5bf48407,
-        type: 2}
-      propertyPath: both
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114320195226446040, guid: e11acde74da230b4d82f2a3a5bf48407,
-        type: 2}
-      propertyPath: reverse
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1499572375953024, guid: e11acde74da230b4d82f2a3a5bf48407, type: 2}
       propertyPath: m_IsActive
       value: 0
