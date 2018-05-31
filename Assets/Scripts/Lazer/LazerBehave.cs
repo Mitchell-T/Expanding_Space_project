@@ -11,9 +11,9 @@ public class LazerBehave : MonoBehaviour {
     private float lazerWidth = 0;
 
     [SerializeField]
-    public Transform objectA;
+    private Transform objectA;
     [SerializeField]
-    public Transform objectB;
+    private Transform objectB;
 
 
 
@@ -24,9 +24,11 @@ public class LazerBehave : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        float xx = objectB.position.x;
+        float yy = objectB.position.y;
 
         //Make ObjectA's position match objectB
-        objectA.position = objectB.position;
+        Vector2 objectA = new Vector2(xx, yy);
         lazerWidth += Time.deltaTime * lazerWidthSpeed;
         transform.localScale = new Vector3(lazerWidth, 1, 1);
         //Sprite.
