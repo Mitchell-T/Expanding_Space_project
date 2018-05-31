@@ -44,7 +44,7 @@ public class Attacks : MonoBehaviour {
     // fire the lazer
     void FireLazer()
     {
-        Vector3 lazerpos = (transform.position + new Vector3(0, -0.35f, 0.2f));
+        Vector3 lazerpos = (transform.position + new Vector3(0, 0, 0));
 
         Rigidbody lazerClone = (Rigidbody)Instantiate(lazer, lazerpos, transform.rotation);
         //lazerClone.velocity = transform.right * lazerSpeed;

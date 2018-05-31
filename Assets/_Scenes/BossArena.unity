@@ -229,8 +229,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -30
-    max: 30
+    min: -15
+    max: 15
     bounciness: 0.1
     bounceMinVelocity: 0
     contactDistance: 300
@@ -1382,8 +1382,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -30
-    max: 30
+    min: -15
+    max: 15
     bounciness: 0.1
     bounceMinVelocity: 0
     contactDistance: 300
@@ -1803,8 +1803,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -30
-    max: 30
+    min: -15
+    max: 15
     bounciness: 0.1
     bounceMinVelocity: 0
     contactDistance: 300
@@ -2000,8 +2000,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -30
-    max: 30
+    min: -15
+    max: 15
     bounciness: 0.1
     bounceMinVelocity: 0
     contactDistance: 300
@@ -2495,8 +2495,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -30
-    max: 30
+    min: -15
+    max: 15
     bounciness: 0.1
     bounceMinVelocity: 0
     contactDistance: 300
@@ -2952,8 +2952,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -30
-    max: 30
+    min: -15
+    max: 15
     bounciness: 0.1
     bounceMinVelocity: 0
     contactDistance: 300
@@ -3079,8 +3079,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -30
-    max: 30
+    min: -15
+    max: 15
     bounciness: 0.1
     bounceMinVelocity: 0
     contactDistance: 300
