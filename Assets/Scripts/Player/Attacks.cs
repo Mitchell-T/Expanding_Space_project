@@ -44,11 +44,11 @@ public class Attacks : MonoBehaviour {
     // fire the lazer
     void FireLazer()
     {
-        Vector3 lazerpos = (transform.position + new Vector3(0, 0, 0));
+        //Vector3 lazerpos = (transform.position + new Vector3(0.2f, 0, 0));
 
-        Rigidbody lazerClone = (Rigidbody)Instantiate(lazer, lazerpos, transform.rotation);
-        //lazerClone.velocity = transform.right * lazerSpeed;
-        Physics.IgnoreCollision(lazerClone.GetComponent<Collider>(), GetComponent<Collider>(), true);
-        //GetComponent<AudioSource>().Play();
+        //Rigidbody lazerClone = (Rigidbody)Instantiate(lazer, lazerpos, transform.rotation);
+        ////lazerClone.velocity = transform.right * lazerSpeed;
+        //Physics.IgnoreCollision(lazerClone.GetComponent<Collider>(), GetComponent<Collider>(), true);
+        ////GetComponent<AudioSource>().Play();
     }
 }

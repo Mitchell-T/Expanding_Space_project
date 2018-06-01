@@ -24,9 +24,10 @@ GameObject:
   - component: {fileID: 114924777206173294}
   - component: {fileID: 65401017853408120}
   - component: {fileID: 54388874498740820}
+  - component: {fileID: 114523513370305308}
   m_Layer: 10
   m_Name: SmallEnemy (1)
-  m_TagString: Untagged
+  m_TagString: ENEMY
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,8 +38,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1958662562240972}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.549509, y: -5.1477423, z: -1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.965088, y: 7.809044, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -86,6 +87,19 @@ MonoBehaviour:
   frequency: 0
   magnitude: 0
   reverseWave: 0
+--- !u!114 &114523513370305308
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1958662562240972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc605c1159161224580f1e3bcebd5fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreObject: {fileID: 0}
+  scoreToAdd: 0
 --- !u!114 &114924777206173294
 MonoBehaviour:
   m_ObjectHideFlags: 1

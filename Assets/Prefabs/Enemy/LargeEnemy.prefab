@@ -24,9 +24,11 @@ GameObject:
   - component: {fileID: 114968209116401730}
   - component: {fileID: 65760470458492582}
   - component: {fileID: 54618633842892960}
+  - component: {fileID: 114596647878508068}
+  - component: {fileID: 114296861378854204}
   m_Layer: 10
   m_Name: LargeEnemy
-  m_TagString: Untagged
+  m_TagString: ENEMY
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1045048582696096}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 7, y: 6, z: -1}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -86,6 +88,33 @@ MonoBehaviour:
   frequency: 0
   magnitude: 0
   reverseWave: 0
+--- !u!114 &114296861378854204
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1045048582696096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e37b0de82fb26d429dae69ae8917fb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fire: 0
+  xToFire: 0
+  bullet: {fileID: 0}
+--- !u!114 &114596647878508068
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1045048582696096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc605c1159161224580f1e3bcebd5fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreObject: {fileID: 0}
+  scoreToAdd: 0
 --- !u!114 &114968209116401730
 MonoBehaviour:
   m_ObjectHideFlags: 1
