@@ -4,12 +4,15 @@ using UnityEngine;
 
 
 
-public class AudioManager : MonoBehaviour {
+public class AudioManager : MonoBehaviour
+{
+
 
     public Sound[] sounds;
 
-	// Use this for initialization
-	void Awake () {
+    // Use this for initialization
+    void Awake()
+    {
         foreach (Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -18,13 +21,13 @@ public class AudioManager : MonoBehaviour {
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
         }
-		
-	}
-	
-	// Update is called once per frame
-	public void Play (string name)
+
+    }
+
+    // Update is called once per frame
+    public void Play(string name)
     {
-       Sound s = Array.Find(sounds, sound => sound.name == name);
-       s.source.Play();
-	}
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        s.source.Play();
+    }
 }
