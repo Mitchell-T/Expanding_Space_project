@@ -7,6 +7,9 @@ public class EnemySpawner : MonoBehaviour {
     [SerializeField]
     private GameObject[] waves;
 
+    [SerializeField]
+    private float[] timeAfterWave;
+
     private void Start()
     {
         StartCoroutine(StartSpawning());
@@ -14,13 +17,10 @@ public class EnemySpawner : MonoBehaviour {
 
     IEnumerator StartSpawning()
     {
-
-        
-
         for(int i=0; i < waves.Length; i++)
         {
             waves[i].SetActive(true);
-            yield return new WaitForSeconds(6);
+            yield return new WaitForSeconds(timeAfterWave[i]);
         }
     }
 

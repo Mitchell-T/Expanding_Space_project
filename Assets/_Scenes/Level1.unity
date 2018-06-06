@@ -2576,6 +2576,9 @@ MonoBehaviour:
   - {fileID: 67781574}
   - {fileID: 1595346675}
   - {fileID: 2088302652}
+  timeAfterWave:
+  - 2
+  - 10
 --- !u!4 &2136376487
 Transform:
   m_ObjectHideFlags: 0

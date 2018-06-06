@@ -38,17 +38,17 @@ public class Attacks : MonoBehaviour {
         Rigidbody bulletClone = (Rigidbody)Instantiate(bullet, bulletpos, transform.rotation);
         bulletClone.velocity = transform.right * bulletSpeed;
         Physics.IgnoreCollision(bulletClone.GetComponent<Collider>(), GetComponent<Collider>(), true);
-        //GetComponent<AudioSource>().Play();
+        FindObjectOfType<AudioManager>().Play("c1");
     }
 
     // fire the lazer
     void FireLazer()
     {
-        //Vector3 lazerpos = (transform.position + new Vector3(0.2f, 0, 0));
+        Vector3 lazerpos = (transform.position + new Vector3(0, 0, 0));
 
-        //Rigidbody lazerClone = (Rigidbody)Instantiate(lazer, lazerpos, transform.rotation);
-        ////lazerClone.velocity = transform.right * lazerSpeed;
-        //Physics.IgnoreCollision(lazerClone.GetComponent<Collider>(), GetComponent<Collider>(), true);
-        ////GetComponent<AudioSource>().Play();
+        Rigidbody lazerClone = (Rigidbody)Instantiate(lazer, lazerpos, transform.rotation);
+        //lazerClone.velocity = transform.right * lazerSpeed;
+        Physics.IgnoreCollision(lazerClone.GetComponent<Collider>(), GetComponent<Collider>(), true);
+        FindObjectOfType<AudioManager>().Play("c2");
     }
 }
