@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class addscore : MonoBehaviour {
+public class addscore : MonoBehaviour
+{
 
     [SerializeField]
     private Rigidbody scoreObject;
@@ -16,4 +17,5 @@ public class addscore : MonoBehaviour {
     {
         HitDetect.Score += scoreToAdd;
     }
-}
+
+};

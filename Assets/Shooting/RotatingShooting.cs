@@ -83,10 +83,13 @@ public class RotatingShooting : MonoBehaviour {
 
             for (int i = 0; i < 7; i++)
             {
-
                 Vector3 bulletpos = (transform.position + new Vector3(0, 0, 0.2f));
                 Quaternion rotation = Quaternion.Euler(0, 0, rotationAngle);
-                bulletClone = (Rigidbody)Instantiate(bullet, bulletpos, rotation);
+
+                if (rotationAngle != 90)
+                {
+                    bulletClone = (Rigidbody)Instantiate(bullet, bulletpos, rotation);
+                }
 
                 rotation = Quaternion.Euler(0, 0, rotationAngleB);
                 bulletClone = (Rigidbody)Instantiate(bullet, bulletpos, rotation);
