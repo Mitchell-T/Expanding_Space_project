@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 54123523001476032}
   m_Layer: 10
   m_Name: Enemy_01
-  m_TagString: Untagged
+  m_TagString: ENEMY
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,6 +143,7 @@ MonoBehaviour:
   reverse: 0
   both: 0
   bullet: {fileID: 54755890284625206, guid: 84570d78b9669b54ca2e6dd010f832cc, type: 2}
+  xToFire: 0
 --- !u!212 &212074251892186716
 SpriteRenderer:
   m_ObjectHideFlags: 1

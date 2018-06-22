@@ -1,0 +1,274 @@
+fileFormatVersion: 2
+guid: 6448b9056fba2c4459b928ea419c83cc
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: planeet_punt_animatie_0
+    21300002: planeet_punt_animatie_1
+    21300004: planeet_punt_animatie_2
+    21300006: planeet_punt_animatie_3
+    21300008: planeet_punt_animatie_4
+    21300010: planeet_punt_animatie_5
+    21300012: planeet_punt_animatie_6
+    21300014: planeet_punt_animatie_7
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: planeet_punt_animatie_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 94
+        height: 106
+      alignment: 9
+      pivot: {x: 0.47470203, y: 0.49999964}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58887c9f939dd7948ba2816cb6a3b91f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeet_punt_animatie_1
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 30
+        width: 107
+        height: 107
+      alignment: 9
+      pivot: {x: 0.46444118, y: 0.50343895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39717a2ea5458c4eb5f8934dbb54118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeet_punt_animatie_2
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 30
+        width: 91
+        height: 99
+      alignment: 9
+      pivot: {x: 0.48954722, y: 0.51921624}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89c39e85d16d3d4892b0157bdae93f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeet_punt_animatie_3
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 39
+        width: 87
+        height: 83
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4828095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144fd8f158ac37249801cea6dbf0eb6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeet_punt_animatie_4
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 42
+        width: 88
+        height: 80
+      alignment: 9
+      pivot: {x: 0.47297737, y: 0.46432963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc43b786c6e62c49acc074431eaacf3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeet_punt_animatie_5
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 38
+        width: 88
+        height: 84
+      alignment: 9
+      pivot: {x: 0.5054044, y: 0.47735214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8148f2fb463ab1d4cbb4e5e53591f6c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeet_punt_animatie_6
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 38
+        width: 83
+        height: 81
+      alignment: 9
+      pivot: {x: 0.50573, y: 0.54110134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b17d9b02031f94288f09370ed42275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeet_punt_animatie_7
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 31
+        width: 99
+        height: 106
+      alignment: 9
+      pivot: {x: 0.5096084, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709c11785a622964680819dec21aaa2a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 85218238a3f9d114aa29d05ac65732a8
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

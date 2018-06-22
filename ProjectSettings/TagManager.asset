@@ -9,6 +9,14 @@ TagManager:
   - ENEMY
   - ENEMYBULLET
   - Planet
+  - Tag_Boss
+  - Tag_Menu_Star
+  - Lazer
+  - Tag_LazerFX
+  - Tag_Explosion_Green
+  - Tag_Scoreobject
+  - Planet_Core
+  - Bullet_Boundry
   layers:
   - Default
   - TransparentFX
@@ -25,8 +33,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - UI Panels
+  - UI
   - 
   - 
   - 

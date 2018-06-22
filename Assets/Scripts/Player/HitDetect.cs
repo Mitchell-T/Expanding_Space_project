@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using EZCameraShake;
 
 public class HitDetect : MonoBehaviour
 {
     [SerializeField]
-    public Text uiText;
+    public Text LivesText;
     [SerializeField]
     public Text ScoreText;
     public static int Lives = 3;
@@ -19,9 +20,14 @@ public class HitDetect : MonoBehaviour
         if (other.gameObject.tag == "ENEMY" || other.gameObject.tag == "ENEMYBULLET")
         {
             Destroy(other.gameObject);
+            //if (other.gameObject.tag == "ENEMY")
+            //{
+            //    StartCoroutine(other.gameObject.GetComponent <scr_HitDetection>()._Destroy(1f));
+            //}
+            
             TakeDamage();
         }
-        if (other.gameObject.tag == "Planet")
+        if (other.gameObject.tag == "Planet_Core")
         {
             Destroy(other.gameObject);
             Score += 10000;
@@ -31,6 +37,12 @@ public class HitDetect : MonoBehaviour
     private void TakeDamage()
     {
         Lives--;
+
+        //Camera Shake
+        CameraShaker.Instance.ShakeOnce(4f, 4f, .1f, 1f);
+
+        var colors = new Color[2];
+
 
         if (Lives <= 0)
         {
@@ -50,8 +62,8 @@ public class HitDetect : MonoBehaviour
 
     void Update()
     {
-        uiText.text = "Lives: " + Lives.ToString();
-        ScoreText.text = "Score: " + Score.ToString();
+        LivesText.text = "Lives: " + Lives.ToString();
+        //ScoreText.text = "Score: " + Score.ToString();
     }
 
 }

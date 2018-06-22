@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1903528627428632}
+  m_IsPrefabParent: 1
+--- !u!1 &1903528627428632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4327843910380710}
+  - component: {fileID: 114903959952784670}
+  m_Layer: 11
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4327843910380710
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1903528627428632}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.594, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114903959952784670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1903528627428632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3e40aa1e5251142a9d5daf6896b1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: c1
+    clip: {fileID: 8300000, guid: 151c26e4a8ee8904eb4f3816644f6cb1, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: lazer_loop_01
+    clip: {fileID: 8300000, guid: 869f8071da1dcc04a8949fef955fd028, type: 3}
+    volume: 0.6
+    pitch: 1
+    source: {fileID: 0}
+  - name: lazer_powerup_01
+    clip: {fileID: 8300000, guid: fb8a623fec2e50244a47497c6295a3aa, type: 3}
+    volume: 0.444
+    pitch: 1
+    source: {fileID: 0}
+  - name: lazer_powerup_02
+    clip: {fileID: 8300000, guid: fe9b5508234fbe345b91b2190e0e7db3, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: lazer_powerdown_01
+    clip: {fileID: 8300000, guid: 421b7b3276f127b4e8220fa7a0932ad8, type: 3}
+    volume: 0.304
+    pitch: 1
+    source: {fileID: 0}
+  - name: lazer_loop_02
+    clip: {fileID: 8300000, guid: 3494d487a44ac964488ec355a5e11266, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: explosion_01
+    clip: {fileID: 8300000, guid: 0a99165e487158b47972c0c95b2ffd7f, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}

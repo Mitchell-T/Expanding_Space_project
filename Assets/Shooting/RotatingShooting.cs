@@ -18,14 +18,18 @@ public class RotatingShooting : MonoBehaviour {
     [SerializeField]
     private float xToFire;
 
+    [SerializeField]
+    private int how_many = 7;
+
     private Rigidbody bulletClone;
 
 
     // Update is called once per frame
-    void Update () {
+    void Update ()
+    {
         if (fire && transform.position.x <= xToFire)
         {
-
+            //Fire
             StartCoroutine(FireOnce());
             fire = false;
         }
@@ -37,9 +41,9 @@ public class RotatingShooting : MonoBehaviour {
         if (!reverse && !both)
         {
 
-            float rotationAngle = 60;
+            float rotationAngle = how_many*10;
 
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < how_many; i++)
             {
 
                 Vector3 bulletpos = (transform.position + new Vector3(0, 0, 0.2f));
@@ -59,7 +63,7 @@ public class RotatingShooting : MonoBehaviour {
 
             float rotationAngleB = 120;
 
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < how_many; i++)
             {
 
                 Vector3 bulletpos = (transform.position + new Vector3(0, 0, 0.2f));
@@ -81,7 +85,7 @@ public class RotatingShooting : MonoBehaviour {
 
             float rotationAngleB = 120;
 
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < how_many; i++)
             {
 
                 Vector3 bulletpos = (transform.position + new Vector3(0, 0, 0.2f));

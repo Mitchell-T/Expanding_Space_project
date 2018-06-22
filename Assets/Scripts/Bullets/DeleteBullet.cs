@@ -10,8 +10,27 @@ public class DeleteBullet : MonoBehaviour {
     [SerializeField]
     private float timeBeforeDelete;
 
-	// Use this for initialization
-	void Start () {
+    [SerializeField]
+    private Rigidbody Explosion;
+
+
+    private void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.CompareTag("ENEMY"))
+        {
+              Destroy(this.gameObject);
+        }
+        if (col.gameObject.CompareTag("Bullet_Boundry"))
+        {
+            Rigidbody clone;
+            clone = Instantiate(Explosion, transform.position, transform.rotation) as Rigidbody;
+
+            Destroy(this.gameObject);
+        }
+    }
+
+    // Use this for initialization
+    void Start () {
 
         if (can_timeBeforeDelete)
         {

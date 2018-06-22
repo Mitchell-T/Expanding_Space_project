@@ -10,24 +10,30 @@ public class LazerBehave : MonoBehaviour {
     [SerializeField]
     private float lazerWidth = 0;
 
-    [SerializeField]
-    private Transform objectA;
-    [SerializeField]
-    private Transform objectB;
+    
+    private GameObject Player;
 
 
 
     // Use this for initialization
     void Start () {
-        
+        Player = GameObject.FindGameObjectWithTag("Player");
+        Debug.Log("Lazer");
     }
 	
 	// Update is called once per frame
-	void Update () {
-        float xx = objectB.position.x;
-        float yy = objectB.position.y;
+	void Update ()
+    {
+        
+        Vector3 pos = transform.position;
 
-        Vector3 bulletpos = (transform.position + new Vector3(1, 0, 0));
+        //float xx = objectB.position.x;
+        //float yy = objectB.position.y;
+
+        //Vector3 bulletpos = (transform.position + new Vector3(1, 0, 0));
+
+        pos = Vector3.MoveTowards(pos, Player.transform.position, Mathf.Infinity);
+        transform.position = pos;
 
         //Rigidbody bulletClone = (Rigidbody)Instantiate(bullet, bulletpos, transform.rotation);
         //bulletClone.velocity = transform.right * bulletSpeed;
@@ -35,7 +41,7 @@ public class LazerBehave : MonoBehaviour {
         //FindObjectOfType<AudioManager>().Play("c1");
 
         //Make ObjectA's position match objectB
-        Vector3 objectA = (transform.position + new Vector3(xx, yy,0));
+        //Vector3 objectA = (transform.position + new Vector3(xx, yy,0));
         //lazerWidth += Time.deltaTime * lazerWidthSpeed;
         //transform.localScale = new Vector3(lazerWidth, 1, 1);
         //Sprite.

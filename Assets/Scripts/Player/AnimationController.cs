@@ -25,9 +25,8 @@ public class AnimationController : MonoBehaviour {
         //Lazer
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            animator.ResetTrigger("isFiringLaser");
-            animator.SetTrigger("isFiringLaser");
-        
+            animator.ResetTrigger("isFiringLazerStart");
+            animator.SetTrigger("isFiringLazerStart");
         }
 
     }
