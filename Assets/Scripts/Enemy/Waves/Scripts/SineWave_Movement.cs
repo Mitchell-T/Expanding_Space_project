@@ -24,11 +24,11 @@ public class SineWave_Movement : MonoBehaviour
     {
         if (!reverseWave)
         {
-            pos += -transform.right * Time.deltaTime * MoveSpeed;
+            pos += -transform.right * Time.deltaTime * 5f;
             transform.position = pos + axis * Mathf.Sin(Time.time * frequency) * magnitude;
         } else if (reverseWave)
         {
-            pos += -transform.right * Time.deltaTime * MoveSpeed;
+            pos += -transform.right * Time.deltaTime * 5f;
             transform.position = pos + axis * Mathf.Sin(Time.time * -frequency) * magnitude;
         }
 

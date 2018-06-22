@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour {
+public class EnemySpawner : MonoBehaviour
+{
 
     [SerializeField]
     private GameObject[] waves;
 
     [SerializeField]
-    private float[] timeAfterWave;
+    private float timeInBetweenWaves;
+
+    [SerializeField]
+    private int wavesToSpawn;
 
     private void Start()
     {
@@ -17,12 +21,21 @@ public class EnemySpawner : MonoBehaviour {
 
     IEnumerator StartSpawning()
     {
-        for(int i = 0; i < waves.Length; i++)
+        for (int i = 0; i < wavesToSpawn; i++)
         {
-            waves[i].SetActive(true);
 
-            yield return new WaitForSeconds(timeAfterWave[i]);
+            Instantiate(waves[RNG()]);
+            Debug.Log(RNG());
+
+            yield return new WaitForSeconds(timeInBetweenWaves);
         }
+    }
+
+    int RNG()
+    {
+        int number = Random.Range(0, waves.Length);
+
+        return number;
     }
 
 }
