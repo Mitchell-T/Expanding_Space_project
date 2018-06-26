@@ -15142,7 +15142,7 @@ MonoBehaviour:
   - {fileID: 1322326385305844, guid: baf01cc738698ca4fbad788ce61dbe34, type: 2}
   - {fileID: 1130891851655518, guid: 4df46e680c8d64d4aa8ed797b97fe915, type: 2}
   timeInBetweenWaves: 1
-  wavesToSpawn: 100
+  wavesToSpawn: 1000
 --- !u!4 &2001671370
 Transform:
   m_ObjectHideFlags: 0

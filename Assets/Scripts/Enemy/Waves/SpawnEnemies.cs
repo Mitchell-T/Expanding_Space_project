@@ -24,6 +24,8 @@ public class SpawnEnemies : MonoBehaviour
         for (int i = 0; i < wavesToSpawn; i++)
         {
 
+
+
             yield return new WaitForSeconds(timeAfterWave[i]);
         }
     }
