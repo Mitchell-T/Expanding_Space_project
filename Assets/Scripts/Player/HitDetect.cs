@@ -55,6 +55,8 @@ public class HitDetect : MonoBehaviour
             //GameObject score_board = GameObject.FindGameObjectWithTag("ScoreKeeper");
             //ScoreText.text = "Score: " + score_board.GetComponent<scr_Score>().Score_Board;
 
+            Lives = 3;
+
             SceneManager.LoadScene(2);
             //SceneManager.UnloadSceneAsync(1);
         }
@@ -63,7 +65,7 @@ public class HitDetect : MonoBehaviour
     void Update()
     {
         LivesText.text = "Lives: " + Lives.ToString();
-        //ScoreText.text = "Score: " + Score.ToString();
+        ScoreText.text = "Score: " + Score.ToString();
     }
 
 }

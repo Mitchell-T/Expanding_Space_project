@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour {
+
+    [SerializeField]
+    private Transform creditText;
 
     [SerializeField]
     private GameObject mainMenu, creditsMenu, creditsText;

@@ -25,7 +25,6 @@ public class EnemySpawner : MonoBehaviour
         {
 
             Instantiate(waves[RNG()]);
-            Debug.Log(RNG());
 
             yield return new WaitForSeconds(timeInBetweenWaves);
         }
